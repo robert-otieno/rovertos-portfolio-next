@@ -25,7 +25,7 @@ function projects() {
   return (
     <div className="scrollbar-hide">
       <Head>
-        <title>Projects | Robert Otieno</title>
+        <title>My Projects</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 

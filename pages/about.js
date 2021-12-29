@@ -8,7 +8,7 @@ function about() {
   return (
     <div className="scrollbar-hide">
       <Head>
-        <title>About Me | Robert Otieno</title>
+        <title>About Me</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       

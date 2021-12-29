@@ -28,8 +28,8 @@ function Technologies() {
                             <path d="M68.31 24.601a2.418 2.418 0 00-4.09-1.305L51.678 35.875l-9.873-18.796a2.417 2.417 0 00-4.277 0L32.133 27.35 18.599 2.114a2.417 2.417 0 00-4.519.773L1 86.625l34.981 19.611a7.252 7.252 0 007.069 0l35.283-19.611L68.31 24.6z" fill="url(#paint0_linear)"/>
                             <defs>
                                 <linearGradient id="paint0_linear" x1="-1.907" y1="20.336" x2="78.862" y2="101.105" gradientUnits="userSpaceOnUse">
-                                    <stop stop-color="#fff" stop-opacity=".1" />
-                                    <stop offset="1" stop-color="#fff" stop-opacity="0" />
+                                    <stop stopColor="#fff" stopOpacity=".1" />
+                                    <stop offset="1" stopColor="#fff" stopOpacity="0" />
                                 </linearGradient>
                             </defs>
                         </svg>
