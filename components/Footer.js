@@ -11,7 +11,7 @@ function Footer() {
             <p className="footer__info">
                 <span className="footer__info__desc">&copy; Robert Otieno - 2021 | Web Apps + Websites developer. Nairobi, Kenya</span>
                 <br/>
-                <small className="footer__info__stack">💻&nbsp;Built with ReactJs, NextJs, Taillwind Css & SendGrid&nbsp;🔥</small>
+                <small className="footer__info__stack">💻&nbsp;Built with ReactJs, NextJs, Taillwind Css & SendGrid&nbsp; | <a href="https://vincentbourdeau.com/">@Vinc</a> 🔥</small>
             </p>
             <svg className="footer__overlay__left ct0" viewBox="0 0 702 777" fill="#FF331F" xmlns="http://www.w3.org/2000/svg">
                 <path d="M602.5 326.469C492.1 178.857 142.167 49.4459 -9 0.174988V776.945C39.8333 749.964 200.724 667.093 370 684.437C792 727.675 740.5 510.983 602.5 326.469Z" />
