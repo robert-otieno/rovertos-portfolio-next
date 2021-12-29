@@ -8,7 +8,6 @@ export default function projectsAPI(req, res) {
                 projects: [
                     {
                         title: "PWA:: Hulu 2.0",
-                        category: "Clones",
                         image: "hulu-2.png",
                         url: "https://hulu-2-theta.vercel.app/",
                         content: "Hulu Clone App built with React.JS! (Next.js, Tailwind CSS, Responsive)",
@@ -21,7 +20,6 @@ export default function projectsAPI(req, res) {
                     },
                     {
                         title: "PWA:: Amazon Clone App",
-                        category: "Clones",
                         image: "amazon.png",
                         url: "https://clone-73627.web.app/",
                         content: "Amazon Clone built with React, React Context API and firebase authentication",
@@ -33,7 +31,6 @@ export default function projectsAPI(req, res) {
                     },
                     {
                         title: "PWA:: COVID-19 Tracker Web App",
-                        category: "Clones",
                         image: "covid19.png",
                         url: "https://covid-19-tracker-640fb.web.app/",
                         content: "COVID-19 Tracker Web App with React JS (React Hooks and Material UI)",
@@ -45,12 +42,23 @@ export default function projectsAPI(req, res) {
                     },
                     {
                         title: "PWA:: Facebook Clone App",
-                        category: "Clones",
                         image: "facebook.png",
                         url: "https://facebook-clone-cc2e1.firebaseapp.com/",
                         content: "Facebook Clone with React JS",
                         tags: [
                             {tag: "React.Js"}
+                        ]
+                    },
+                    {
+                        title: "My Portfolio",
+                        image: "portfolio.png",
+                        url: "",
+                        content: "Personal Portfolio Built with ReactJs, NextJs, Tailwind CSS and sendGrid for handling emails. Inspiration drawn from Vincent Bourdeau's Portfolio",
+                        tags: [
+                            {tag: "React.Js"},
+                            {tag: "Next.Js"},
+                            {tag: "Tailwind CSS"},
+                            {tag: "SendGrid"}
                         ]
                     }
                 ]

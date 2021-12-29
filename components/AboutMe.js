@@ -44,8 +44,8 @@ function AboutMe() {
             <path d="M1285.99 983.356C883.852 944.438 644 632 571.086 510.504C384 316 268 164 240 0V1176H900.616H2609.71C2878.73 989.194 3319.04 576.275 2928.07 419.047C2439.36 222.511 2595.75 574.718 2472.87 747.903C2349.99 921.088 1788.67 1032 1285.99 983.356Z" fill="white"/>
           </g>
           <defs>
-            <filter id="filter0_dd" x="0" y="0" width="3083" height="1176" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+            <filter id="filter0_dd" x="0" y="0" width="3083" height="1176" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+            <feFlood floodOpacity="0" result="BackgroundImageFix"/>
             <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
             <feOffset dx="-240"/>
             <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.04 0"/>

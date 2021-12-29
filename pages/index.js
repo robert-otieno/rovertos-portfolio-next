@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Homepage from '../components/Homepage'
-import '../components/misc/intro-animation'
+import '../misc/intro-animation'
 
 export default function Home() {
 

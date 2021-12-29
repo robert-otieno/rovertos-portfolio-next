@@ -91,8 +91,8 @@ function ContactForm() {
 
     return (
         <>
-        <Navbar/>
-            <header className="p-8 grid grid-cols-1 md:grid-cols-2 gap-4 pt-10 lg:px-40 bg-orange-50 dark:bg-blue-900 min-h-screen overflow-hidden">
+            
+            <header className="p-8 grid grid-cols-1 md:grid-cols-2 gap-4 pt-10 lg:px-40 dark:bg-blue-900 min-h-screen overflow-hidden">
                 <div className="relative z-[1] mx-auto mb-10 md:mt-20">
                     <div className="badge bg-red-500 inline-block rounded-xl">
                         <p className="font-light text-base px-4 py-1 text-gray-50">Lets talk</p>
@@ -105,8 +105,8 @@ function ContactForm() {
                     </p>
                 </div>
 
-                <form onSubmit={handleSubmit} className="relative z-[1] rounded-lg shadow-xl flex flex-col px-8 py-4 bg-white dark:bg-blue-500">
-                    <h1 className="text-2xl font-bold dark:text-gray-50">Send a message</h1>
+                <form onSubmit={handleSubmit} className="relative z-[1] rounded-lg shadow-xl flex flex-col px-8 py-8 bg-white dark:bg-blue-500">
+                    <Navbar/>
 
                     <label htmlFor="fullname" className="text-gray-500 font-light mt-8 dark:text-gray-50">Full name<span className="text-orange-500 dark:text-gray-50">*</span> </label>
                     <input type="text" value={fullname} onChange={(e) => {setFullname(e.target.value);}} name="fullname" className="bg-transparent border-b py-2 pl-4 focus:outline-none focus:rounded-md focus:ring-1 ring-orange-500 font-light text-gray-500" /> {errors?.fullname && ( <p className="text-red-500 font-light">Fullname cannot be empty.</p> )}

@@ -137,16 +137,19 @@ class ShapeOverlays {
   }
 }
 
-(function() {
-  setTimeout(() => {
-    const elmOverlay = document.querySelector('.shape-overlays');
-    const overlay = new ShapeOverlays(elmOverlay);
-
-    overlay.toggle();
-
+if (typeof window === 'object') {
+  (function() {
     setTimeout(() => {
-      const main = document.querySelector('main');
-      main.classList.add('is-loaded');
+      const elmOverlay = document.querySelector('.shape-overlays');
+      const overlay = new ShapeOverlays(elmOverlay);
+  
+      overlay.toggle();
+  
+      setTimeout(() => {
+        const main = document.querySelector('main');
+        main.classList.add('is-loaded');
+      }, 1);
     }, 1);
-  }, 1);
-}());
+  }());
+}
+

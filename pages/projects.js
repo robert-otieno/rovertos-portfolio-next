@@ -3,7 +3,6 @@ import { useEffect, useState } from "react"
 import Footer from "../components/Footer"
 import Navbar from "../components/Navbar"
 import ProjectItem from "../components/ProjectItem"
-// import '../components/misc/intro-animation'
 
 function projects() {
   const [portfolio, setportfolio] = useState([])
