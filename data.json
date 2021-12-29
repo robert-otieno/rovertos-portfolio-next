@@ -1,0 +1,120 @@
+  {
+    "main": {
+      "name": "Robert Otieno",
+      "occupation": "Web Apps & Websites Developer",
+      "description": "Eat, Sleep, Code React",
+      "image": "profilepic.jpg",
+      "bio": "Hi there, I am Robert! I am a web apps developer, and designer. I love coding and discovering new ways to create beautiful web applications using the latest technology stack. I enjoy developing web apps and websites from scratch using ReactJs, NextJs, WordPress, HTML5, and CSS3. Outside of work hours, you can find me learning new technologies in JavaScript, React-Native, and Python!",
+      "contactmessage": "Get in touch with me and let's create something amazing!",
+      "email": "robertotieno.or@gmail.com",
+      "phone": "+254 755 995346",
+      "address": {
+        "city": "Nairobi",
+        "state": "Kenya",
+        "zip": "254"
+      },
+      "website": "#",
+      "resumedownload": "#",
+      "social": [
+        {
+          "name": "facebook",
+          "url": "https://www.facebook.com/Rovertos.bob/",
+          "className": "fa fa-facebook"
+        },
+        {
+          "name": "linkedin",
+          "url": "https://www.linkedin.com/in/robert-otieno-9b2b42174/",
+          "className": "fa fa-linkedin"
+        },
+        {
+          "name": "instagram",
+          "url": "https://www.instagram.com/robert_robotic/",
+          "className": "fa fa-instagram"
+        },
+        {
+          "name": "github",
+          "url": "https://github.com/robert-otieno",
+          "className": "fa fa-github"
+        }
+      ]
+    },
+    "resume": {
+      "skillmessage": "My Programming Language Proficiency",
+      "education": [
+        {
+          "school": "Kisii University - Kisii, Kenya",
+          "degree": "Library and Information Studies",
+          "graduated": "December 2013",
+          "description": "Graduated with First Class Honours"
+        }
+      ],
+      "work": [
+      ],
+      "skills": [
+        {
+          "name": "ReactJs",
+          "level": "75%"
+        },
+        {
+          "name": "WordPress",
+          "level": "85%"
+        },
+        {
+          "name": "Git",
+          "level": "70%"
+        },
+        {
+          "name": "JavaScript",
+          "level": "80%"
+        },
+        {
+          "name": "Web Development",
+          "level": "95%"
+        },
+        {
+          "name": "Responsive Web Design",
+          "level": "98%"
+        }
+      ]
+    },
+    "portfolio": {
+      "projects": [
+        {
+          "title": "Hulu 2.0 with React.JS! (Next.js, Tailwind CSS, Responsive)",
+          "category": "Clones",
+          "image": "hulu-2.png",
+          "url": "https://hulu-2-theta.vercel.app/"
+        },
+        {
+          "title": "Amazon Clone built with React, React Context API and firebase authentication",
+          "category": "Clones",
+          "image": "amazon.png",
+          "url": "https://clone-73627.web.app/"
+        },
+        {
+          "title": "COVID-19 Tracker Web App with React JS (React Hooks and Material UI)",
+          "category": "Clones",
+          "image": "covid19.png",
+          "url": "https://covid-19-tracker-640fb.web.app/"
+        },
+        {
+          "title": "Facebook Clone with React JS",
+          "category": "Clones",
+          "image": "facebook.png",
+          "url": "https://facebook-clone-cc2e1.firebaseapp.com/"
+        }
+      ]
+    },
+    "testimonials": {
+      "testimonials": [
+        {
+          "text": "Sonny is absolutely excellent, his depth of knowledge & his mentorship really meant a lot to us... I would definitely recommend",
+          "user": "Jorge Fouto"
+        },
+        {
+          "text": "Learning with Sonny has been AWESOME, he makes learning React so easy and approachable, you'll finally feel like you know what's going on!",
+          "user": "Adam Curtis"
+        }
+      ]
+    }
+  }
