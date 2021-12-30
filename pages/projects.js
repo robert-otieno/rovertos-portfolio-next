@@ -27,6 +27,8 @@ function projects({ isFirstMount }) {
     <>
       <Head>
         <title>My Projects</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta name="description" content="Check out some of my amazing projects"></meta>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
