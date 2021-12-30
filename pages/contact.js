@@ -1,16 +1,21 @@
 import Head from "next/head"
+import { motion } from 'framer-motion'
 import ContactForm from "../components/ContactForm"
+import InitialTransition from "../components/InitialTransition"
 
-const contact = () => {
+const contact = ({ isFirstMount }) => {
     return (
-        
-        <div>
+        <>
             <Head>
                 <title>Contact Me</title>
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <ContactForm/>
-        </div>
+
+            <motion.div exit={{ opacity: 0 }}>
+                {isFirstMount && <InitialTransition />}
+                <ContactForm/>
+            </motion.div>
+        </>
     )
 }
 

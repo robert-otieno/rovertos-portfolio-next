@@ -1,10 +1,12 @@
+import { motion } from 'framer-motion'
 import Head from 'next/head'
 import { useEffect, useState } from "react"
 import Footer from "../components/Footer"
+import InitialTransition from '../components/InitialTransition'
 import Navbar from "../components/Navbar"
 import ProjectItem from "../components/ProjectItem"
 
-function projects() {
+function projects({ isFirstMount }) {
   const [portfolio, setportfolio] = useState([])
 
   useEffect(() => {
@@ -23,37 +25,40 @@ function projects() {
   }
 
   return (
-    <div className="scrollbar-hide">
+    <>
       <Head>
         <title>My Projects</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className="projects">
-        <Navbar />
-        <div className="projects__wrapper">
-          {portfolio.map(({category, projects}, index) => {
-            return (
-              <>
-                {projects?.length > 0 ? (
-                  <section className="projects__section" key={index}>
-                    <article className="projects__category">
-                      <h2 className="projects__header">{category}</h2>
-                      <ul className="projects__list">
-                      {projects.map((item, index) => {
-                        return (<ProjectItem item={item} key={index}/>)
-                      })}
-                      </ul>
-                    </article>
-                  </section>
-                ) : (<span></span>)}
-              </>
-            )
-          })}
+      <motion.div exit={{ opacity: 0 }}>
+        {isFirstMount && <InitialTransition />}
+        <div className="projects">
+          <Navbar />
+          <div className="projects__wrapper">
+            {portfolio.map(({category, projects}, index) => {
+              return (
+                <>
+                  {projects?.length > 0 ? (
+                    <section className="projects__section" key={index}>
+                      <article className="projects__category">
+                        <h2 className="projects__header">{category}</h2>
+                        <ul className="projects__list">
+                        {projects.map((item, index) => {
+                          return (<ProjectItem item={item} key={index}/>)
+                        })}
+                        </ul>
+                      </article>
+                    </section>
+                  ) : (<span></span>)}
+                </>
+              )
+            })}
+          </div>
+          <Footer />
         </div>
-        <Footer />
-      </div>
-    </div>
+      </motion.div>
+    </>
   );
 }
 

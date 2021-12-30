@@ -1,13 +1,28 @@
+import { motion } from "framer-motion";
 import { useRouter } from "next/router";
 import Navbar from "./Navbar";
 
 function Homepage() {
     const router = useRouter()
+    
+      const homepage = {
+        initial: {
+            opacity: 0,
+        },
+        animate: {
+            opacity: 1,
+            transform: "none",
+            transition: {
+                duration: 0.8,
+                delay: 1.5,
+            }
+        },
+      };
 
     return (
         <div className="home container">
             <div className="home__wrapper">
-                <section className="home__section content-box">
+                <motion.section animate="animate" variants={homepage} className="home__section content-box">
                     <Navbar />
 
                     <div className="home__content">
@@ -16,8 +31,8 @@ function Homepage() {
                             Websites, Graphics Design & Creative ideas <br className="md:leading-[3rem]" />
                         </h1>
                         <h2 className="home__tags">
-                            <span className="home__tag">Freelancer</span>
-                            <span className="home__tag">Web Apps Developer</span>
+                            <span className="home__tag hidden md:block">Freelancer</span>
+                            <span className="home__tag">Web Apps</span>
                             <span className="home__tag">Graphics</span>
                             <span className="home__tag">Websites</span>
                         </h2>
@@ -28,10 +43,9 @@ function Homepage() {
                             </svg>
                         </span>
                     </div>
-                </section>
+                </motion.section>
             </div>
         </div>
-        
     )
 }
 

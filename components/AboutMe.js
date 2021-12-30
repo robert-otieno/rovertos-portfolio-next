@@ -1,45 +1,47 @@
 import Image from "next/image";
 import { useRouter } from "next/router";
+import { motion } from "framer-motion"
 
 // Images
 import hero from "../public/assets/react.svg";
 import webapp from "../public/assets/webapp-development.svg";
 import website from "../public/assets/website-development.svg";
 import Technologies from "./Technologies";
+import InitialTransition from "./InitialTransition";
 
 function AboutMe() {
   const router = useRouter();
 
   return (
     <>
-      <div className="about__wrapper scroll"  data-scroll-section>
+      <div className="about__wrapper scroll">
         <div className="bg-effect pb-4 sm:pb-10 md:pb-16 lg:pb-20">
-        <section className="about__section" data-scroll data-scroll-speed="3" data-scroll-position="top">
-          <div className="relative text-center block w-11/12 mx-auto">
-            <article className="">
-              <h2 className="m-0 leading-4 text-sm font-normal tracking-normal">
-                Front-End&nbsp;Developer&nbsp;👨‍💻&nbsp;Freelancer
-              </h2>
-              <h1 className="font-serif m-0 px-4 pt-4 pb-2 text-xl leading-7 font-bold tracking-normal">
-                Web Apps & Websites Developer
-              </h1>
-              <p className="max-w-[90%] mx-auto pt-2 pb-8 text-base leading-7 font-normal">
-                Hi there, I am Robert! A web apps developer, and designer. I
-                love coding and discovering new ways to create beautiful web
-                applications using the latest technology stack. I enjoy
-                developing web apps and websites from scratch using ReactJs,
-                NextJs, WordPress, HTML5, and CSS3. 🚀
-              </p>
-              <div style={{ position: "relative", height: "200px" }}>
-                <Image className="w-full" alt="Hero" src={hero} layout="fill" objectFit="contain"/>
-              </div>
-            </article>
-          </div>
-        </section>
+          <section className="about__section">
+            <div className="relative text-center block w-11/12 mx-auto">
+              <article className="">
+                <h2 className="m-0 leading-4 text-sm font-normal tracking-normal">
+                  Front-End&nbsp;Developer&nbsp;👨‍💻&nbsp;Freelancer
+                </h2>
+                <h1 className="font-serif m-0 px-4 pt-4 pb-2 text-xl leading-7 font-bold tracking-normal">
+                  Web Apps & Websites Developer
+                </h1>
+                <p className="max-w-[90%] mx-auto pt-2 pb-8 text-base leading-7 font-normal">
+                  Hi there, I am Robert! A web apps developer, and designer. I
+                  love coding and discovering new ways to create beautiful web
+                  applications using the latest technology stack. I enjoy
+                  developing web apps and websites from scratch using ReactJs,
+                  NextJs, WordPress, HTML5, and CSS3. 🚀
+                </p>
+                <div style={{ position: "relative", height: "200px" }}>
+                  <Image className="w-full" alt="Hero" src={hero} layout="fill" objectFit="contain"/>
+                </div>
+              </article>
+            </div>
+          </section>
         </div>
 
         {/* <!-- About Hero SVG separator --> */}
-        <svg class="about__hero__svg" data-scroll data-scroll-speed="2" data-scroll-position="top" style={{transform: "scale(2) translate(1%,-70%)"}} viewBox="0 0 3083 1176" fill="none" xmlns="http://www.w3.org/2000/svg" data-scroll>
+        <svg className="about__hero__svg" style={{transform: "scale(2) translate(1%,-70%)"}} viewBox="0 0 3083 1176" fill="none" xmlns="http://www.w3.org/2000/svg" data-scroll>
           <g filter="url(#filter0_dd)">
             <path d="M1285.99 983.356C883.852 944.438 644 632 571.086 510.504C384 316 268 164 240 0V1176H900.616H2609.71C2878.73 989.194 3319.04 576.275 2928.07 419.047C2439.36 222.511 2595.75 574.718 2472.87 747.903C2349.99 921.088 1788.67 1032 1285.99 983.356Z" fill="white"/>
           </g>
@@ -148,7 +150,7 @@ function AboutMe() {
         <section className=" about__cta">
           <a className="about__cta__link" onClick={() => router.push("/contact")} title="Contact Me">Contact Me</a>
         </section>
-      </div>      
+      </div>
     </>
   );
 }

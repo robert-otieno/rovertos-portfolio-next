@@ -6,6 +6,7 @@
   /* Utilities */  
   .text-ghost-white {color: var(--font-color);}
   .bg-ghost-white {background-color: var(--font-color);}
+  .bg-honey-yellow {background-color: var(--honey-yellow);}
   .text-default {color: var(--oxford-blue);}
   .text-primary {color: var(--honey-yellow);}
   .text-secondary {color: var(--red);}
@@ -13,10 +14,10 @@
   .transform-anime {transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0.0433105, 0, 1);}
 
   /* Navbar */
-  .navbar {@apply w-full relative mx-auto}
+  .navbar {@apply w-full relative mx-auto md:shadow-sm}
   .navbar__nav {@apply relative p-4 bg-white z-[5] flex text-slate-900}
   .navbar__logo {@apply flex items-center font-normal no-underline will-change-auto transition-opacity cursor-pointer}
-  .navbar__links {@apply ml-auto flex}
+  .navbar__links {@apply ml-auto flex items-center}
   .navbar__link {@apply hidden md:inline-block text-sm md:mr-3 no-underline cursor-pointer hover:text-gray-500}
   .navbar__link__contact {@apply mr-3 text-sm cursor-pointer hover:text-gray-500}
   .vertical__divider {@apply mr-3 text-gray-300}
@@ -29,7 +30,7 @@
   .home__wrapper {@apply flex items-center justify-center min-h-screen}
   .home__section {@apply relative w-11/12 bg-white py-8 px-4 mx-auto my-0 shadow-xl rounded-2xl max-w-screen-sm}
   .home__content {@apply px-4}
-  .home__description {@apply m-0 py-6 font-serif font-bold text-2xl text-default leading-6 md:text-3xl}
+  .home__description {@apply m-0 py-6 font-serif text-lg sm:font-bold sm:text-2xl text-default leading-8 md:text-3xl}
   .home__link {@apply flex items-center text-base font-bold mt-4 text-secondary cursor-pointer lg:absolute lg:right-8 lg:bottom-8}
   .home__overlays {@apply fixed top-0 right-0 bottom-0 left-0 overflow-hidden z-[1]}
   .home__overlay__left {@apply absolute top-0 left-0 opacity-80}
@@ -71,9 +72,9 @@
   /* Projects */
   .projects {@apply border-t-[3rem] border-solid border-[#F7AB0A] relative z-[2] overflow-hidden bg-white}
   .projects__wrapper {@apply min-h-screen relative block w-auto mx-auto max-w-screen-md xl:max-w-screen-lg pb-80 md:pb-[28rem] z-[3]}
-  .projects__section {@apply p-8 mx-auto mt-4 mb-4 relative z-[3] w-11/12}
+  .projects__section {@apply p-4 md:p-8 mx-auto mt-4 mb-4 relative z-[3] w-11/12}
   .projects__category {@apply w-full}
-  .projects__header {@apply font-serif mb-8 py-3 px-4 text-2xl font-semibold bg-gray-100 rounded-xl}
+  .projects__header {@apply font-serif mb-8 py-3 px-4 text-lg md:text-2xl font-semibold bg-gray-100 rounded-xl}
   .projects__list {@apply m-0 py-0 list-none md:ml-8}
   .projects__item {@apply pb-8 border-solid border-b-2 border-[#FF331F]}
   .projects__item__header {@apply my-8 font-serif text-default font-extrabold tracking-normal text-lg}
@@ -99,23 +100,18 @@
   }
 
   .content-box {
-    opacity: 1;
-    /* transform-origin: center top;
+    transformOrigin: center top;
     transform-style: preserve-3d;
     transform: translateY(100%) rotateX(-80deg);
     transition: opacity 0s cubic-bezier(.215,.61,.355,1),transform 0s cubic-bezier(.215,.61,.355,1);
     transition-duration: 0.8s;
-    transition-delay: 1.5s; */
+    /* transition-delay: 1.5s; */
   }
-  /* .is-loaded .home__wrapper .content-box {
-    opacity: 1;
-    transform: none;
-  } */
-  /* .shape-overlays {@apply w-screen max-h-screen pointer-events-none fixed top-0 left-0 z-[99]}
+  .shape-overlays {@apply w-screen max-h-screen pointer-events-none fixed top-0 left-0 z-[99]}
   .shape-overlays.is-opened {pointer-events: auto;}
   .shape-overlays__path:nth-of-type(1) {opacity: 0.95;fill: var(--honey-yellow);}
   .shape-overlays__path:nth-of-type(2) {opacity: 0.85;fill: var(--oxford-blue);}
-  .shape-overlays__path:nth-of-type(3) {opacity: 0.75;fill: var(--red);} */
+  .shape-overlays__path:nth-of-type(3) {opacity: 0.75;fill: var(--red);}
 
   .ct0 {transform: translate3d(0,50%,0);}
   .ct1,.ct2 {transform: translate3d(-50%,0,0);}
@@ -198,8 +194,6 @@
   * {line-height: var(--font-height);margin: 0;padding: 0;}
   *, *:before, *:after {box-sizing: border-box;}
   html {
-    width: 100%;
-    height: auto;
     background: url('https://images.unsplash.com/photo-1446229117710-2e5dd691ab55?ixlib=rb-1.2.1&auto=format&fit=crop&w=1489&q=80');
     background-size: cover;
     background-position: center;
@@ -207,8 +201,6 @@
     background-attachment: fixed;
   }
   body {
-    width: 100%;
-    height: auto;
     background-color: rgba(255, 255, 255, .90);
     color: var(--oxford-blue);
   }
@@ -222,5 +214,6 @@
     left: 0;
     top: 0;
     font-size: 100%;
+    /* overflow: hidden; */
   }
 }
