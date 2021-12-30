@@ -7,7 +7,7 @@ function ProjectItem({item}) {
             <li className="projects__item">
                 <h3 className="projects__item__header">{item.title}</h3>
 
-                <div className="projects__item__grid">
+                <div className="">
                     {/* <Image className="projects__item__image" height={500} width={1000} alt="Project Image" src={`/../public/portfolio/${item.image}`}/> */}
 
                     <span className="projects__item__info">

@@ -77,7 +77,7 @@
   .projects__header {@apply font-serif mb-8 py-3 px-4 text-lg md:text-2xl font-semibold bg-gray-100 rounded-xl}
   .projects__list {@apply m-0 py-0 list-none md:ml-8}
   .projects__item {@apply pb-8 border-solid border-b-2 border-[#FF331F]}
-  .projects__item__header {@apply my-8 font-serif text-default font-extrabold tracking-normal text-lg}
+  .projects__item__header {@apply mt-8 mb-4 font-serif text-default font-extrabold tracking-normal text-lg}
   .projects__item__grid,.about__feature__grid {@apply lg:grid grid-rows-1 grid-cols-2 gap-4}
   .projects__item__image {@apply py-2}
   .projects__item__content {@apply mt-1 mb-4 p-0 text-sm font-normal leading-6}
