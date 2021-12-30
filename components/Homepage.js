@@ -14,7 +14,6 @@ function Homepage() {
             transform: "none",
             transition: {
                 duration: 0.8,
-                delay: 1.5,
             }
         },
       };

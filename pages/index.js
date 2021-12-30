@@ -1,7 +1,6 @@
 import { motion } from 'framer-motion'
 import Head from 'next/head'
 import Homepage from '../components/Homepage'
-import InitialTransition from '../components/InitialTransition'
 
 export default function Home({ isFirstMount }) {
 
@@ -13,7 +12,6 @@ export default function Home({ isFirstMount }) {
       </Head>
 
       <motion.main exit={{ opacity: 0 }}>
-        {isFirstMount && <InitialTransition />}
         {/*Main Content*/}
         <Homepage />
 

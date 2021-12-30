@@ -1,7 +1,6 @@
 import Head from "next/head"
 import { motion } from 'framer-motion'
 import ContactForm from "../components/ContactForm"
-import InitialTransition from "../components/InitialTransition"
 
 const contact = ({ isFirstMount }) => {
     return (
@@ -12,7 +11,6 @@ const contact = ({ isFirstMount }) => {
             </Head>
 
             <motion.div exit={{ opacity: 0 }}>
-                {isFirstMount && <InitialTransition />}
                 <ContactForm/>
             </motion.div>
         </>

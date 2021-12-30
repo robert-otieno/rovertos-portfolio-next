@@ -2,10 +2,9 @@ import { motion } from 'framer-motion'
 import Head from 'next/head'
 import AboutMe from '../components/AboutMe'
 import Footer from "../components/Footer"
-import InitialTransition from '../components/InitialTransition'
 import Navbar from "../components/Navbar"
 
-function about({ isFirstMount }) {
+function about() {
   return (
     <>
       <Head>
@@ -14,7 +13,6 @@ function about({ isFirstMount }) {
       </Head>
       
       <motion.div exit={{ opacity: 0 }}>
-        {isFirstMount && <InitialTransition />}
         <div className="about">
           <Navbar/>
           <AboutMe />

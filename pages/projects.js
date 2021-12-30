@@ -2,7 +2,6 @@ import { motion } from 'framer-motion'
 import Head from 'next/head'
 import { useEffect, useState } from "react"
 import Footer from "../components/Footer"
-import InitialTransition from '../components/InitialTransition'
 import Navbar from "../components/Navbar"
 import ProjectItem from "../components/ProjectItem"
 
@@ -32,7 +31,6 @@ function projects({ isFirstMount }) {
       </Head>
 
       <motion.div exit={{ opacity: 0 }}>
-        {isFirstMount && <InitialTransition />}
         <div className="projects">
           <Navbar />
           <div className="projects__wrapper">
