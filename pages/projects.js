@@ -6,7 +6,7 @@ import Navbar from "../components/Navbar"
 import ProjectItem from "../components/ProjectItem"
 
 export async function getServerSideProps() {
-  const url = process.env.NODE_ENV === "development" ? "http://localhost:3000" : "https://rovertos-portfolio-next.vercel.app"
+  const url = process.env.NODE_ENV === "development" ? "http://localhost:3000" : "https://robertotieno.rokeservices.com"
   const res = await fetch(`${url}/api/projects`)
   const data = await res.json()
 
