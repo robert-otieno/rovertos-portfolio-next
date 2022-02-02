@@ -5,23 +5,35 @@ import Footer from "../components/Footer"
 import Navbar from "../components/Navbar"
 import ProjectItem from "../components/ProjectItem"
 
-function projects({ isFirstMount }) {
-  const [portfolio, setportfolio] = useState([])
+export async function getServerSideProps() {
+  const url = process.env.NODE_ENV === "development" ? "http://localhost:3000" : "https://rovertos-portfolio-next.vercel.app"
+  const res = await fetch(`${url}/api/projects`)
+  const data = await res.json()
 
-  useEffect(() => {
-    const getportfolio = async () => {
-      const portfolioFromAPI = await fetchportfolio()
-      setportfolio(portfolioFromAPI)
+  return {
+    props: {
+      portfolio: data
     }
-    getportfolio()
-  }, [])
+  }
+}
+
+function projects({ portfolio }) {
+  // const [portfolio, setportfolio] = useState([])
+
+  // useEffect(() => {
+  //   const getportfolio = async () => {
+  //     const portfolioFromAPI = await fetchportfolio()
+  //     setportfolio(portfolioFromAPI)
+  //   }
+  //   getportfolio()
+  // }, [])
 
   // Fetch portfolio
-  const fetchportfolio = async () => {
-    const res = await fetch('/api/projects')
-    const data = await res.json()
-    return data
-  }
+  // const fetchportfolio = async () => {
+  //   const res = await fetch('/api/projects')
+  //   const data = await res.json()
+  //   return data
+  // }
 
   return (
     <>
@@ -36,7 +48,7 @@ function projects({ isFirstMount }) {
         <div className="projects">
           <Navbar />
           <div className="projects__wrapper">
-            {portfolio.map(({category, projects}, index) => {
+            {portfolio?.map(({category, projects}, index) => {
               return (
                 <>
                   {projects?.length > 0 ? (
