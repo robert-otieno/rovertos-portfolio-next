@@ -46,7 +46,8 @@ export default function projectsAPI(req, res) {
                         url: "https://facebook-clone-cc2e1.firebaseapp.com/",
                         content: "Facebook Clone with React JS",
                         tags: [
-                            {tag: "React.Js"}
+                            {tag: "React.Js"},
+                            {tag: "Firebase"}
                         ]
                     },
                     {

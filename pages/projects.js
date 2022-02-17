@@ -1,12 +1,12 @@
 import { motion } from 'framer-motion'
 import Head from 'next/head'
-import { useEffect, useState } from "react"
+// import { useEffect, useState } from "react"
 import Footer from "../components/Footer"
 import Navbar from "../components/Navbar"
 import ProjectItem from "../components/ProjectItem"
 
 export async function getServerSideProps() {
-  const url = process.env.NODE_ENV === "development" ? "http://localhost:3000" : "https://robertotieno.rokeservices.com"
+  const url = process.env.NODE_ENV === "development" ? "http://localhost:3001" : "https://robertotieno.rokeservices.com"
   const res = await fetch(`${url}/api/projects`)
   const data = await res.json()
 
@@ -18,23 +18,6 @@ export async function getServerSideProps() {
 }
 
 function projects({ portfolio }) {
-  // const [portfolio, setportfolio] = useState([])
-
-  // useEffect(() => {
-  //   const getportfolio = async () => {
-  //     const portfolioFromAPI = await fetchportfolio()
-  //     setportfolio(portfolioFromAPI)
-  //   }
-  //   getportfolio()
-  // }, [])
-
-  // Fetch portfolio
-  // const fetchportfolio = async () => {
-  //   const res = await fetch('/api/projects')
-  //   const data = await res.json()
-  //   return data
-  // }
-
   return (
     <>
       <Head>
@@ -48,8 +31,7 @@ function projects({ portfolio }) {
         <div className="projects">
           <Navbar />
           <div className="projects__wrapper">
-            {portfolio?.map(({category, projects}, index) => {
-              return (
+            {portfolio?.map(({category, projects}, index) => (
                 <>
                   {projects?.length > 0 ? (
                     <section className="projects__section" key={index}>
@@ -62,10 +44,9 @@ function projects({ portfolio }) {
                         </ul>
                       </article>
                     </section>
-                  ) : (<span></span>)}
+                  ) : (<></>)}
                 </>
-              )
-            })}
+              ))}
           </div>
           <Footer />
         </div>

@@ -7,8 +7,8 @@ function ProjectItem({item}) {
             <li className="projects__item">
                 <h3 className="projects__item__header">{item.title}</h3>
 
-                <div className="">
-                    {/* <Image className="projects__item__image" height={500} width={1000} alt="Project Image" src={`/../public/portfolio/${item.image}`}/> */}
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <Image className="projects__item__image" height={500} width={1000} alt="Project Image" src={`/../public/portfolio/${item.image}`}/>
 
                     <span className="projects__item__info">
                         <p className="projects__item__content">{item.content}</p>
