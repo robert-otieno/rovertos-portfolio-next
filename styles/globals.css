@@ -28,7 +28,7 @@
   /* Home */
   .home {@apply fixed top-2/4 left-2/4 m-0}
   .home__wrapper {@apply flex items-center justify-center min-h-screen}
-  .home__section {@apply relative w-11/12 bg-white py-8 px-4 mx-auto my-0 shadow-xl rounded-2xl max-w-screen-sm}
+  .home__section {@apply relative w-11/12 bg-white py-8 px-4 mx-auto my-0 shadow-xl rounded-2xl max-w-screen-md}
   .home__content {@apply px-4}
   .home__description {@apply m-0 py-6 font-serif text-lg sm:font-bold sm:text-2xl text-default leading-8 md:text-3xl}
   .home__link {@apply flex items-center text-base font-bold mt-4 text-secondary cursor-pointer lg:absolute lg:right-8 lg:bottom-8}
@@ -94,13 +94,19 @@
   .footer__overlay__left {@apply absolute left-0 bottom-0 w-3/5}
   .footer__overlay__right {@apply absolute left-1/2 bottom-0 w-full z-[2]}
 
+  .form-group {@apply mb-3}
+  .form-group label {@apply text-slate-300 font-semibold leading-6 text-sm mb-2}
+  .form-control {@apply block outline-none w-full py-2 px-3 leading-[1.5] text-slate-300 bg-transparent bg-clip-padding border border-slate-300 rounded transition-colors duration-150 ease-in-out shadow}
+  .is-invalid {@apply border border-red-500 rounded}
+  .invalid-feedback {@apply w-full mt-1 text-sm text-red-500}
+
   .container {
     z-index: 9;
     transform: translate3d(-50%,-50%,0);
   }
 
   .content-box {
-    transformOrigin: center top;
+    transform-origin: center top;
     /* transform-style: preserve-3d; */
     transform: translateY(100%) rotateX(-80deg);
     transition: opacity 0s cubic-bezier(.215,.61,.355,1),transform 0s cubic-bezier(.215,.61,.355,1);
@@ -140,12 +146,6 @@
     left: 0;
     overflow: hidden;
   }
-  /* .modal-svgs.overlays-under {
-    z-index: -1;
-  }
-  .modal-svgs.overlays-over {
-    z-index: -1;
-  } */
   .modal-svgs svg {
     transform: translate3d(-50%, -35%, 0);
   }
@@ -165,7 +165,7 @@
   .modal-svgs svg.right {
     display: none;
     position: absolute;
-    top: 0;
+    bottom: 0;
     right: 0;
     opacity: 1;
     fill: #FF331F;
