@@ -6,6 +6,8 @@
     "start": "next start"
   },
   "dependencies": {
+    "@headlessui/react": "^1.5.0",
+    "@heroicons/react": "^1.0.5",
     "@sendgrid/mail": "^7.6.0",
     "framer-motion": "^5.5.5",
     "locomotive-scroll": "^4.1.3",

@@ -42,9 +42,9 @@
   .about__section {@apply p-2 md:p-8 mx-auto my-4 relative z-[3] max-w-4xl}
   .about__section__article {@apply flex flex-col items-center w-full mx-auto p-2 md:p-8}
   .about__article__header {@apply text-xl leading-8 font-bold}
-  .about__hero__svg {@apply relative top-0 block -mb-[40%] w-full z-[2]}
+  .about__hero__svg {@apply relative top-0 block w-full z-[2]}
   .about__feature__image {@apply relative w-full p-10 -my-20}
-  .about__link {@apply flex items-center text-base text-primary cursor-pointer lg:absolute lg:right-8}
+  .about__link {@apply flex items-center text-base text-primary cursor-pointer lg:absolute lg:right-8 border}
   .about__cta {@apply p-8 text-center transform-anime z-[3]}
   .about__cta__link {@apply inline-block px-6 py-3 text-xl font-medium leading-4 text-center tracking-wider rounded-full border border-solid border-[#F7AB0A] text-white bg-[#F7AB0A] cursor-pointer outline-none will-change-[opacity] transition-opacity ease-in no-underline}
   .about__seo {@apply bg-[#001B2E]}

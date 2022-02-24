@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { useRouter } from "next/router";
 
 // Images
@@ -39,7 +40,7 @@ function AboutMe() {
         </div>
 
         {/* <!-- About Hero SVG separator --> */}
-        <svg className="about__hero__svg" style={{transform: "scale(2) translate(1%,-70%)"}} viewBox="0 0 3083 1176" fill="none" xmlns="http://www.w3.org/2000/svg" data-scroll>
+        {/* <svg className="about__hero__svg" style={{transform: "scale(2) translate(1%,-70%)"}} viewBox="0 0 3083 1176" fill="none" xmlns="http://www.w3.org/2000/svg" data-scroll>
           <g filter="url(#filter0_dd)">
             <path d="M1285.99 983.356C883.852 944.438 644 632 571.086 510.504C384 316 268 164 240 0V1176H900.616H2609.71C2878.73 989.194 3319.04 576.275 2928.07 419.047C2439.36 222.511 2595.75 574.718 2472.87 747.903C2349.99 921.088 1788.67 1032 1285.99 983.356Z" fill="white"/>
           </g>
@@ -57,7 +58,7 @@ function AboutMe() {
             <feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow" result="shape"/>
             </filter>
           </defs>
-        </svg>
+        </svg> */}
 
         {/* Technologies Grid*/}
         <Technologies/>
@@ -70,17 +71,13 @@ function AboutMe() {
                 <h2 className="about__article__header">
                   <span className="text-primary">Web Apps</span> Development
                 </h2>
-                <p className="leading-8 font-light">
+                <p className="leading-8 font-light mb-3">
                 Are you having a hard time finding a "Ready-Made" solution that meets your requirements? Are you fed up with paying monthly fees for software that tries to perform more than you require?
                 A Custom Web App can help in this situation.
                 It's designed to accomplish exactly what it's supposed to.
                 Transform and automate any time-consuming business procedure to increase productivity! 
                 </p>
-                <span className="about__link" onClick={() => router.push("/projects")} title="Learn more about my projects">See Projects&nbsp;
-                  <svg className="ml-2" xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="#720E07" viewBox="0 0 31.49 31.49">
-                    <path d="M21.205 5.007a1.112 1.112 0 0 0-1.587 0 1.12 1.12 0 0 0 0 1.571l8.047 8.047H1.111A1.106 1.106 0 0 0 0 15.737c0 .619.492 1.127 1.111 1.127h26.554l-8.047 8.032c-.429.444-.429 1.159 0 1.587a1.112 1.112 0 0 0 1.587 0l9.952-9.952a1.093 1.093 0 0 0 0-1.571l-9.952-9.953z" />
-                  </svg>
-                </span>
+                <a className="lg:float-right border rounded-full py-2 px-4 text-orange-400 border-orange-400 hover:bg-orange-400 hover:text-white hover:font-medium" href="/projects" title="Learn more about my projects">See Projects &rarr;</a>
               </div>
             </article>
 
@@ -90,7 +87,7 @@ function AboutMe() {
                 <h2 className="about__article__header">
                   Custom <span className="text-primary noto">Websites</span> Development
                 </h2>
-                <p className="leading-8 font-light">
+                <p className="leading-8 font-light mb-3">
                   Sure you can use a <span className="line-through">Wix</span>,{" "}
                   <span className="line-through">Wordpress</span> or{" "}
                   <small>(insert any comparable)</small>. But if you really want to
@@ -99,11 +96,7 @@ function AboutMe() {
                   understanding your brand and core values to create something that
                   is unique and beautiful.
                 </p>
-                <span className="about__link" onClick={() => router.push("/projects")} title="Learn more about my projects">See Projects&nbsp;
-                  <svg className="ml-2" xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="#720E07" viewBox="0 0 31.49 31.49">
-                    <path d="M21.205 5.007a1.112 1.112 0 0 0-1.587 0 1.12 1.12 0 0 0 0 1.571l8.047 8.047H1.111A1.106 1.106 0 0 0 0 15.737c0 .619.492 1.127 1.111 1.127h26.554l-8.047 8.032c-.429.444-.429 1.159 0 1.587a1.112 1.112 0 0 0 1.587 0l9.952-9.952a1.093 1.093 0 0 0 0-1.571l-9.952-9.953z" />
-                  </svg>
-                </span>
+                <a className="lg:float-right border rounded-full py-2 px-4 text-orange-400 border-orange-400 hover:bg-orange-400 hover:text-white hover:font-medium" href="/projects" title="Learn more about my projects">See Projects &rarr;</a>
               </div>
             </article>
           </section>
@@ -130,16 +123,18 @@ function AboutMe() {
                 <a rel="dns-prefetch" href="https://pagespeed.web.dev/report?url=https%3A%2F%2Frovertos-portfolio-next.vercel.app%2F" target="_blank" title="WebPerf test" className="about__seo__link">
                   Test my site on Google Page Speed
                   <span className="pl-2 flex align-middle justify-center">
-                    <svg fill="#FF331F" width="14" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                      <path d="M508.875 248.458l-160-160c-4.167-4.167-10.917-4.167-15.083 0-4.167 4.167-4.167 10.917 0 15.083l141.792 141.792H10.667C4.771 245.333 0 250.104 0 256s4.771 10.667 10.667 10.667h464.917L333.792 408.458c-4.167 4.167-4.167 10.917 0 15.083a10.634 10.634 0 0 0 7.542 3.125c2.729 0 5.458-1.042 7.542-3.125l160-160c4.166-4.166 4.166-10.916-.001-15.083z" />
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                      <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
                     </svg>
                   </span>
                 </a>
                 <a rel="dns-prefetch" href="https://gtmetrix.com/reports/rovertos-portfolio-next.vercel.app/1m3qF0T2/" target="_blank" title="WebPerf test" className="about__seo__link">
                   Test my site on GTMetrix
-                  <svg fill="#FF331F" width="14" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                    <path d="M508.875 248.458l-160-160c-4.167-4.167-10.917-4.167-15.083 0-4.167 4.167-4.167 10.917 0 15.083l141.792 141.792H10.667C4.771 245.333 0 250.104 0 256s4.771 10.667 10.667 10.667h464.917L333.792 408.458c-4.167 4.167-4.167 10.917 0 15.083a10.634 10.634 0 0 0 7.542 3.125c2.729 0 5.458-1.042 7.542-3.125l160-160c4.166-4.166 4.166-10.916-.001-15.083z" />
-                  </svg>
+                  <span className="pl-2 flex align-middle justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                      <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                    </svg>
+                  </span>
                 </a>
               </div>
             </article>
