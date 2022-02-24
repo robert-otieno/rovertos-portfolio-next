@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Link from "next/link";
+import { PaperClipIcon } from '@heroicons/react/solid'
 import { useRouter } from "next/router";
 
 // Images
@@ -59,12 +59,79 @@ function AboutMe() {
             </filter>
           </defs>
         </svg> */}
+       
 
         {/* Technologies Grid*/}
         <Technologies/>
 
         <div className="about__services">
           <section className="about__section">
+
+ {/* Description */}
+ <div className="bg-white shadow overflow-hidden sm:rounded-lg">
+      <div className="px-4 py-5 sm:px-6">
+        <h3 className="text-lg leading-6 font-medium text-slate-900">Personal Information</h3>
+        <p className="mt-1 max-w-2xl text-sm text-slate-500">Personal details and application.</p>
+      </div>
+      <div className="border-t border-slate-200">
+        <dl>
+          <div className="border-b border-slate-200 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+            <dt className="text-sm font-medium text-slate-500">Full name</dt>
+            <dd className="mt-1 text-sm text-slate-900 sm:mt-0 sm:col-span-2">Robert Opiyo Otieno</dd>
+          </div>
+          <div className="border-b border-slate-200 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+            <dt className="text-sm font-medium text-slate-500">Career Goal</dt>
+            <dd className="mt-1 text-sm text-slate-900 sm:mt-0 sm:col-span-2">Full Stack Developer</dd>
+          </div>
+          <div className="border-b border-slate-200 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+            <dt className="text-sm font-medium text-slate-500">Email address</dt>
+            <dd className="mt-1 text-sm text-slate-900 sm:mt-0 sm:col-span-2">robertotieno.or@gmail.com</dd>
+          </div>
+          <div className="border-b border-slate-200 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+            <dt className="text-sm font-medium text-slate-500">About</dt>
+            <dd className="mt-1 text-sm text-slate-900 sm:mt-0 sm:col-span-2">
+            I am a web developer and designer with an eye for detail. 
+            I have experience building web apps from scratch using HTML5, CSS3, JavaScript, ReactJs, and NextJs and using WordPress as well. 
+            My favorite part about my job is that I get to learn something new every day!
+            </dd>
+          </div>
+          <div className="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+            <dt className="text-sm font-medium text-slate-500">Attachments</dt>
+            <dd className="mt-1 text-sm text-slate-900 sm:mt-0 sm:col-span-2">
+              <ul role="list" className="border border-slate-200 rounded-md divide-y divide-slate-200">
+                <li className="pl-3 pr-4 py-3 flex items-center justify-between text-sm">
+                  <div className="w-0 flex-1 flex items-center">
+                    <PaperClipIcon className="flex-shrink-0 h-5 w-5 text-slate-400" aria-hidden="true" />
+                    <span className="ml-2 flex-1 w-0 truncate">resume_front_end_developer.pdf</span>
+                  </div>
+                  <div className="ml-4 flex-shrink-0">
+                    <a href="#" className="font-medium text-orange-400 hover:text-orange-500" disable="">
+                      <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+</svg>
+                    </a>
+                  </div>
+                </li>
+                <li className="pl-3 pr-4 py-3 flex items-center justify-between text-sm">
+                  <div className="w-0 flex-1 flex items-center">
+                    <PaperClipIcon className="flex-shrink-0 h-5 w-5 text-slate-400" aria-hidden="true" />
+                    <span className="ml-2 flex-1 w-0 truncate">coverletter_front_end_developer.pdf</span>
+                  </div>
+                  <div className="ml-4 flex-shrink-0">
+                    <a href="#" className="font-medium text-orange-400 hover:text-orange-500" disable="">
+                      <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+</svg>
+                    </a>
+                  </div>
+                </li>
+              </ul>
+            </dd>
+          </div>
+        </dl>
+      </div>
+    </div>
+
             <article className="about__section__article about__feature__grid">
               <span className="max-w-lg"><Image className="about__feature__image" alt="Custom Web Apps Development" src={webapp}/></span>
               <div className="p-4">

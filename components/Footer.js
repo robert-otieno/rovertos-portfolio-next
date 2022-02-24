@@ -9,7 +9,7 @@ function Footer() {
             </svg>
 
             <p className="footer__info">
-                <span className="footer__info__desc">&copy; Robert Otieno - 2021 | Web Apps + Websites developer. Nairobi, Kenya</span>
+                <span className="footer__info__desc">&copy; Robert Otieno - {new Date().getFullYear()} | Web Apps + Websites developer. Nairobi, Kenya</span>
                 <br/>
                 <small className="footer__info__stack">💻&nbsp;Built with ReactJs, NextJs, Taillwind Css & SendGrid&nbsp; | <a href="https://vincentbourdeau.com/">@Vinc</a> 🔥</small>
             </p>
