@@ -30,14 +30,16 @@ export default function Home({ isFirstMount }) {
             <motion.section animate='animate' variants={homepage} className='home__section content-box'>
               <div className='home__content'>
                 <h1 className='home__description'>
-                  Web Apps Development, <br className='md:leading-[3rem]' />
-                  Websites, Graphics Design & Creative ideas <br className='md:leading-[3rem]' />
+                  Hi, I am Robert Otieno <br className='md:leading-[3rem]' />
+                  <span className="text-base font-light">Systems Librarian | Full Stack Developer,</span>
                 </h1>
                 <h2 className='home__tags'>
-                  <span className='home__tag hidden md:block'>Freelancer</span>
-                  <span className='home__tag'>Web Apps</span>
-                  <span className='home__tag'>Graphics</span>
-                  <span className='home__tag'>Websites</span>
+                  {/* <span className='home__tag hidden md:block'>Freelancer</span> */}
+                  <span className='home__tag'>ReactJS</span>
+                  <span className='home__tag'>NextJS</span>
+                  <span className='home__tag'>TailwindCSS</span>
+                  <span className='home__tag'>Firebase</span>
+                  <span className='home__tag'>Expo/React Native</span>
                 </h2>
               </div>
             </motion.section>
