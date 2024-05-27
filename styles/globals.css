@@ -28,7 +28,7 @@
   /* Home */
   .home {@apply fixed top-2/4 left-2/4 m-0}
   .home__wrapper {@apply flex items-center justify-center min-h-screen}
-  .home__section {@apply relative w-11/12 bg-white py-8 px-4 mx-auto my-0 shadow-xl rounded-2xl max-w-screen-md}
+  .home__section {@apply relative w-11/12 bg-white py-4 px-4 mx-auto my-0 shadow-xl rounded-2xl max-w-screen-md}
   .home__content {@apply px-4}
   .home__description {@apply m-0 py-6 font-serif text-lg sm:font-bold sm:text-2xl text-default leading-8 md:text-3xl}
   .home__link {@apply flex items-center text-base font-bold mt-4 text-secondary cursor-pointer lg:absolute lg:right-8 lg:bottom-8}
@@ -82,8 +82,8 @@
   .projects__item__image {@apply py-2}
   .projects__item__content {@apply mt-1 mb-4 p-0 text-sm font-normal leading-6}
   .projects__item__link {@apply text-base text-secondary block pb-4}
-  .projects__item__tags,.home__tags {@apply m-0 pb-2 flex flex-wrap leading-4 font-normal text-amber-500 text-sm font-sans}
-  .projects__item__tag,.home__tag {@apply border rounded-full border-[#F7AB0A] px-3 py-1 mr-2 mt-1}
+  .projects__item__tags,.home__tags {@apply m-0 pb-2 flex flex-wrap leading-4 font-normal text-sm font-sans}
+  .projects__item__tag,.home__tag {@apply border rounded-full border-secondaryCustom px-3 py-1 mr-2 mt-1}
 
   /* Footer */
   .footer {@apply absolute left-0 bottom-0 w-full min-h-screen overflow-hidden z-[1]}
