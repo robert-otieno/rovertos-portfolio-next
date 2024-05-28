@@ -30,7 +30,7 @@
   .home__wrapper {@apply flex items-center justify-center min-h-screen}
   .home__section {@apply relative w-11/12 bg-white py-4 px-4 mx-auto my-0 shadow-xl rounded-2xl max-w-screen-md}
   .home__content {@apply px-4}
-  .home__description {@apply m-0 py-6 font-serif text-lg sm:font-bold sm:text-2xl text-default leading-8 md:text-3xl}
+  .home__description {@apply py-6 font-serif text-lg sm:font-bold sm:text-2xl text-default leading-8 md:text-3xl}
   .home__link {@apply flex items-center text-base font-bold mt-4 text-secondary cursor-pointer lg:absolute lg:right-8 lg:bottom-8}
   .home__overlays {@apply fixed top-0 right-0 bottom-0 left-0 overflow-hidden z-[1]}
   .home__overlay__left {@apply absolute top-0 left-0 opacity-80}

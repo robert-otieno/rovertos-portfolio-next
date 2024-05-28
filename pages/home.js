@@ -28,22 +28,23 @@ export default function Home({ isFirstMount }) {
 
       <motion.main exit={{ opacity: 0 }}>
         {/*Main Content*/}
-        <div className='home container'>
+        <div className='home container' style={{ textRendering: "optimizeLegibility"}}>
           <div className='home__wrapper'>
             <motion.section animate='animate' variants={homepage} className='home__section content-box flex flex-row'>
               {/* <img src='../assets/robert.jpg' className=' w-48 max-w-xs rounded-lg shadow-2xl' /> */}
               <div className='home__content'>
                 <h1 className='home__description'>
-                  Hi! I am Robert, <br className='md:leading-[3rem]' />
-                  <span className='text-lg font-light tracking-wider'>A Systems Librarian & Full Stack Developer based in Nairobi.</span>
+                  Hi! I am Robert, a Systems Librarian & Full Stack Developer based in Nairobi.
                 </h1>
+
+                <h2 className="sm:font-light sm:text-base mb-6">I am passionate about leveraging technology to solve real-world problems and improve accessibility. Let's connect and create something amazing together.</h2>
                 <h2 className='home__tags'>
                   {/* <span className='home__tag hidden md:block'>Freelancer</span> */}
-                  <span className='home__tag'>ReactJS</span>
-                  <span className='home__tag'>NextJS</span>
-                  <span className='home__tag'>TailwindCSS</span>
-                  <span className='home__tag'>Firebase</span>
-                  <span className='home__tag'>Expo/React Native</span>
+                  <span className='home__tag tooltip' data-tip="Building dynamic and responsive user interfaces.">ReactJS</span>
+                  <span className='home__tag tooltip' data-tip="Creating optimized and fast-loading web applications.">NextJS</span>
+                  <span className='home__tag tooltip' data-tip="Designing clean and modern UIs with utility-first CSS.">TailwindCSS</span>
+                  <span className='home__tag tooltip' data-tip="Implementing robust backend services for real-time data management.">Firebase</span>
+                  <span className='home__tag tooltip' data-tip="Developing cross-platform mobile applications.">Expo/React Native</span>
                 </h2>
               </div>
             </motion.section>
